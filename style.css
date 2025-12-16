@@ -1,0 +1,124 @@
+:root {
+    --primary-blue: #4299e1;
+    --dark-blue: #1a202c;
+    --nav-bg: #edeef1;
+}
+
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+.text-custom-info, .bg-custom-info {
+    color: var(--primary-blue) !important;
+}
+.bg-custom-info {
+    background-color: var(--primary-blue) !important;
+}
+.bg-nav {
+    background-color: var(--nav-bg) !important;
+}
+.border-custom-info {
+    border: 2px solid var(--primary-blue) !important;
+}
+
+
+.face {
+    max-width: 1700px;
+}
+
+.face2{
+    box-shadow: 0 0 0 4px var(--primary-blue);
+}
+.im {
+    outline: 5px solid var(--primary-blue);
+    border-radius: 50%;
+    background-image: url('./img/destructive_car_race-1920x1200.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.contain {
+    border-top: 3px solid #007bff;
+}
+
+.icon-size {
+    width: 80px;
+    height: auto;
+}
+
+
+.face3, .type, .busi {
+   
+    text-align: inherit; 
+    margin: 0; 
+    padding: 0;
+}
+
+.face3{
+    color: white;
+    font-weight: 800;
+    font-size: 50px;  }
+
+.busi{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.type{
+    
+    font-size: 60px; 
+    font-weight: bold;
+    color: var(--primary-blue);
+    
+    animation: typing 9s steps(15) forwards infinite, blink 0.75s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid var(--primary-blue);
+    
+    display: inline-block; 
+    max-width: 100%; 
+  }
+
+@keyframes typing {
+    0% {width: 0;}
+    44% {width: 100%;}
+    99% {width: 100%;}
+    100% { width: 0px;} 
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; } 
+    50% { border-color: var(--primary-blue); }
+}
+
+.box1, .box2, .box3 {
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+    
+    transform: translateY(-15px); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+}
+
+
+@media (max-width: 768px) {
+    .type {
+        font-size: 30px; 
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .type {
+        font-size: 40px; 
+    }
+}
+
+@media (min-width: 1201px)
+ {
+    .type {
+        font-size: 60px; 
+    }
+    }
