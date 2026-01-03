@@ -32,7 +32,7 @@
 .im {
     outline: 5px solid var(--primary-blue);
     border-radius: 50%;
-    background-image: url('./img/destructive_car_race-1920x1200.jpg'); 
+    background-image: url('./img/Alpha.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -117,8 +117,7 @@
 }
 
 @media (min-width: 1201px)
- {
+{
     .type {
         font-size: 60px; 
-    }
-    }
+    }}
